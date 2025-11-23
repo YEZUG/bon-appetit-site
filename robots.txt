@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://bon-appetit-bk.ru/sitemap.xml
