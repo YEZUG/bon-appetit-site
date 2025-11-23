@@ -590,6 +590,9 @@
         
         .about-text {
             flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             text-align: center;
         }
         
@@ -599,8 +602,7 @@
             line-height: 1.7;
             text-align: center;
             max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
+            width: 100%;
         }
         
         .about-image {
@@ -859,7 +861,8 @@
             background: rgba(255,20,147,0.1);
             border-radius: 10px;
             border: 1px solid rgba(255,20,147,0.3);
-            text-align: left;
+            text-align: center;
+            width: 100%;
         }
         
         .seo-text h3 {
@@ -872,11 +875,18 @@
         .seo-text ul {
             margin: 15px 0;
             padding-left: 20px;
+            text-align: left;
+            display: inline-block;
         }
         
         .seo-text li {
             margin-bottom: 8px;
             color: #ccc;
+            text-align: left;
+        }
+        
+        .seo-text p {
+            text-align: center;
         }
         
         /* Loading Animation */
@@ -1519,9 +1529,11 @@
             
             <div class="about-content">
                 <div class="about-text">
-                    <p>БОН Аппетит - это уютное кафе в Белой Калитве с неповторимой атмосферой, где каждый гость может насладиться изысканными блюдами и качественным обслуживанием.</p>
-                    <p>Мы используем только свежие и качественные продукты, чтобы предложить вам лучшие вкусовые впечатления. Наша команда профессиональных поваров создает блюда с любовью и вниманием к деталям.</p>
-                    <p>В нашем меню вы найдете как классические блюда, так и авторские рецепты, которые обязательно вас удивят.</p>
+                    <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+                        <p>БОН Аппетит - это уютное кафе в Белой Калитве с неповторимой атмосферой, где каждый гость может насладиться изысканными блюдами и качественным обслуживанием.</p>
+                        <p>Мы используем только свежие и качественные продукты, чтобы предложить вам лучшие вкусовые впечатления. Наша команда профессиональных поваров создает блюда с любовью и вниманием к деталям.</p>
+                        <p>В нашем меню вы найдете как классические блюда, так и авторские рецепты, которые обязательно вас удивят.</p>
+                    </div>
                     
                     <!-- SEO текст -->
                     <div class="seo-text">
