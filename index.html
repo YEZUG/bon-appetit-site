@@ -571,54 +571,89 @@
             transform: translateY(-2px);
             box-shadow: 0 6px 15px rgba(255, 20, 147, 0.5);
         }
-        
-        /* About Section */
+
+        /* About Section - Centered Version */
         .about-section {
             padding: 80px 0;
             background-color: #0a0a0a;
             border-bottom: 1px solid #ff1493;
             text-align: center;
         }
-        
-        .about-content {
+
+        .about-content-centered {
             display: flex;
-            align-items: center;
             justify-content: center;
-            gap: 50px;
             margin-top: 40px;
         }
-        
-        .about-text {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+
+        .about-text-centered {
+            max-width: 800px;
             text-align: center;
+            margin: 0 auto;
         }
-        
-        .about-text p {
+
+        .about-text-centered p {
             margin-bottom: 20px;
             color: #ccc;
             line-height: 1.7;
             text-align: center;
-            max-width: 800px;
-            width: 100%;
         }
-        
-        .about-image {
-            flex: 1;
+
+        .seo-text-centered {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background: rgba(255,20,147,0.1);
+            border-radius: 10px;
+            border: 1px solid rgba(255,20,147,0.3);
+            text-align: center;
+        }
+
+        .seo-text-centered h3 {
+            color: #ff69b4;
+            margin-bottom: 15px;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .centered-list {
+            display: flex;
+            justify-content: center;
+            margin: 15px 0;
+        }
+
+        .centered-list ul {
+            text-align: left;
+            display: inline-block;
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        .centered-list li {
+            margin-bottom: 8px;
+            color: #ccc;
+        }
+
+        .centered-button {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .about-image-centered {
+            max-width: 800px;
+            margin: 40px auto 0;
             border-radius: 10px;
             overflow: hidden;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
             border: 1px solid #ff1493;
             transition: transform 0.3s ease;
         }
-        
-        .about-image:hover {
+
+        .about-image-centered:hover {
             transform: scale(1.02);
         }
-        
-        .about-image img {
+
+        .about-image-centered img {
             width: 100%;
             height: auto;
             display: block;
@@ -853,42 +888,6 @@
             transform: scale(1.05);
         }
         
-        /* SEO Text Section */
-        .seo-text {
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 20px;
-            background: rgba(255,20,147,0.1);
-            border-radius: 10px;
-            border: 1px solid rgba(255,20,147,0.3);
-            text-align: center;
-            width: 100%;
-        }
-        
-        .seo-text h3 {
-            color: #ff69b4;
-            margin-bottom: 15px;
-            font-size: 24px;
-            text-align: center;
-        }
-        
-        .seo-text ul {
-            margin: 15px 0;
-            padding-left: 20px;
-            text-align: left;
-            display: inline-block;
-        }
-        
-        .seo-text li {
-            margin-bottom: 8px;
-            color: #ccc;
-            text-align: left;
-        }
-        
-        .seo-text p {
-            text-align: center;
-        }
-        
         /* Loading Animation */
         .loading {
             display: inline-block;
@@ -1043,14 +1042,6 @@
                 right: 20px;
                 width: 40px;
                 height: 40px;
-            }
-            
-            .about-text {
-                text-align: center;
-            }
-            
-            .about-text p {
-                text-align: center;
             }
         }
     </style>
@@ -1522,7 +1513,7 @@
         </div>
     </section>
 
-       <!-- About Section -->
+    <!-- About Section -->
     <section class="about-section" id="about">
         <div class="container">
             <h2 class="section-title">О нашем кафе</h2>
