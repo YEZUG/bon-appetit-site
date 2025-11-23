@@ -590,13 +590,17 @@
         
         .about-text {
             flex: 1;
-            text-align: left;
+            text-align: center;
         }
         
         .about-text p {
             margin-bottom: 20px;
             color: #ccc;
             line-height: 1.7;
+            text-align: center;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
         }
         
         .about-image {
@@ -855,12 +859,14 @@
             background: rgba(255,20,147,0.1);
             border-radius: 10px;
             border: 1px solid rgba(255,20,147,0.3);
+            text-align: left;
         }
         
         .seo-text h3 {
             color: #ff69b4;
             margin-bottom: 15px;
             font-size: 24px;
+            text-align: center;
         }
         
         .seo-text ul {
@@ -1027,6 +1033,14 @@
                 right: 20px;
                 width: 40px;
                 height: 40px;
+            }
+            
+            .about-text {
+                text-align: center;
+            }
+            
+            .about-text p {
+                text-align: center;
             }
         }
     </style>
