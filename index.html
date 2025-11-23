@@ -577,27 +577,26 @@
             padding: 80px 0;
             background-color: #0a0a0a;
             border-bottom: 1px solid #ff1493;
+            text-align: center;
         }
         
         .about-content {
             display: flex;
             align-items: center;
+            justify-content: center;
             gap: 50px;
+            margin-top: 40px;
         }
         
         .about-text {
             flex: 1;
-        }
-        
-        .about-text h2 {
-            font-size: 36px;
-            margin-bottom: 20px;
-            color: #ff1493;
+            text-align: left;
         }
         
         .about-text p {
             margin-bottom: 20px;
             color: #ccc;
+            line-height: 1.7;
         }
         
         .about-image {
@@ -1502,9 +1501,10 @@
     <!-- About Section -->
     <section class="about-section" id="about">
         <div class="container">
+            <h2 class="section-title">О нашем кафе</h2>
+            
             <div class="about-content">
                 <div class="about-text">
-                    <h2>О нашем кафе</h2>
                     <p>БОН Аппетит - это уютное кафе в Белой Калитве с неповторимой атмосферой, где каждый гость может насладиться изысканными блюдами и качественным обслуживанием.</p>
                     <p>Мы используем только свежие и качественные продукты, чтобы предложить вам лучшие вкусовые впечатления. Наша команда профессиональных поваров создает блюда с любовью и вниманием к деталям.</p>
                     <p>В нашем меню вы найдете как классические блюда, так и авторские рецепты, которые обязательно вас удивят.</p>
@@ -1524,7 +1524,9 @@
                         <p>Если вы ищете "кафе в Белой Калитве", "Бон аппетит Белая Калитва" или "доставка еды Белая Калитва" - вы по адресу!</p>
                     </div>
                     
-                    <a href="#contact" class="btn">Связаться с нами</a>
+                    <div style="text-align: center; margin-top: 30px;">
+                        <a href="#contact" class="btn">Связаться с нами</a>
+                    </div>
                 </div>
                 <div class="about-image">
                     <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Интерьер кафе БОН Аппетит в Белой Калитве">
